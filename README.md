@@ -8,9 +8,23 @@ Este proyecto busca mostrar una lista de los artistas consultados por el medio d
   $git clone https://github.com/ssepulveda08/MVVM-GEOAPP.git
 ```
 
+## Versión 	🔝
+
+ ```
+  code version 1.0.0
+```
+
 ### Detalle de la Arquitectura📋
 
 ![MVVM](https://res.cloudinary.com/software-crafters/image/upload/v1544533331/posts/xamarin-forms-app-nativas-introduccion/mvvm-1-1500x482_1.png)
+
+Se implementa una arquitectura de desacoplamiento de tareas basada en el patron MVVM que nos permite garantizar un alto grado de independencia en cada componente de la mismo.
+
+### ScreenShot📋
+
+<img src="https://github.com/ssepulveda08/MVVM-GEOAPP/blob/master/ScreenShot/Screenshot_1583030150.png"  width="200" height="500" />
+
+<img src="https://github.com/ssepulveda08/MVVM-GEOAPP/blob/master/ScreenShot/Screenshot_1583030132.png"  width="200" height="500" />
 
 
 
