@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ssepulveda.geoapp.viewModels.PostViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_standar"
+        android:paddingLeft="@dimen/spacing_standar"
+        android:layout_marginStart="@dimen/spacing_lager"
+        android:layout_marginEnd="@dimen/spacing_lager"
+        android:elevation="@dimen/elevationcard"
+        android:background="@drawable/background_item"
+        android:paddingRight="@dimen/spacing_standar">
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/spacing_medion"
+            android:layout_marginBottom="@dimen/spacing_medion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/spacing_medion"
+            tool:layout_editor_absoluteX="16dp"
+            tool:text="Nombre del Titulo" />
+
+        <ImageView
+            android:id="@+id/imageView_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_lager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/post_title"
+            app:layout_constraintStart_toEndOf="@+id/post_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setImageGlide="@{viewModel.postImg}"
+            tool:background="@color/colorPrimaryDark"
+            tool:layout_height="30dp"
+            tool:layout_width="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

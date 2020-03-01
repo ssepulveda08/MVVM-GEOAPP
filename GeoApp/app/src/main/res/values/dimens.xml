@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_lager">16dp</dimen>
+    <dimen name="elevationcard">4dp</dimen>
+    <dimen name="spacing_standar">8dp</dimen>
+    <dimen name="spacing_medion">12dp</dimen>
+</resources>
